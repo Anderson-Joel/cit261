@@ -21,22 +21,21 @@ var pet = {
     color: "black"
 };
 
-document.getElementById().innerHTML =
-        pet.name + "is a " + pet.color + " " + pet.species = ".";
+document.write(pet.name + "is a " + pet.color + " " + pet.species = ".");
 //or
-document.getElementById().innerHTML =
-pet["name"] + "is a " + pet["color"] + " " + pet["species"] = ".";
+document.write(pet["name"] + "is a " + pet["color"] + " " + pet["species"] = ".");
 
 //Method are actions that can be performed on object.
 //Using the "this" keywork make it the owner of the object.
 
 var monitor = {
-    brand : "Dell",
-    size : 19,
-    type : "LCD",
-    fullBrand : function() {
+    brand: "Dell",
+    size: 19,
+    type: "LCD",
+    fullBrand: function () {
         return this.brand + "'s " + this.size + " inch " + this.type + " monitor.";
     }
+    document.write(monitor.fullBrand());
 };
 
 //When putting the method outside of the variable, do object.method.
@@ -44,3 +43,41 @@ var monitor = {
 //        return this.brand + "'s " + this.size + " inch " + this.type + " monitor.";
 //    }
 
+// Inheritance is an object that inheirit properties and methods from its parent
+//by using the "prototype" property.
+//objectName.prototype.property
+
+function Person(first, last, age, eycolor) {
+    this.first = first;
+    this.last = last;
+    this.age = age;
+}
+Person.prototype.nationality = "English";
+
+function Person(first, last, age, eycolor) {
+    this.first = first;
+    this.last = last;
+    this.age = age;
+}
+Person.prototype.name = function () {
+    return this.first + " " + this.last;
+};
+
+//Instantiation is and instance of an object
+
+function species(name, latinName, status)
+{
+    this.name = name;
+    this.ln = latinName;
+    this.status = status;
+}
+
+var x = new species
+        ("Bonobo",
+        "Pan paniscus",
+        "endangered");
+        document.write(x.name);
+        document.write("<br"/>);
+        document.write(x.ln);
+        document.write("<br"/>);
+        document.write(x.status);
