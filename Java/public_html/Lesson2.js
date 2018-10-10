@@ -29,14 +29,14 @@ document.write(pet["name"] + "is a " + pet["color"] + " " + pet["species"] = "."
 //Using the "this" keywork make it the owner of the object.
 
 var monitor = {
-    brand: "Dell",
-    size: 19,
-    type: "LCD",
-    fullBrand: function () {
+brand: "Dell",
+        size: 19,
+        type: "LCD",
+        fullBrand: function () {
         return this.brand + "'s " + this.size + " inch " + this.type + " monitor.";
-    }
-    document.write(monitor.fullBrand());
-};
+        }
+document.write(monitor.fullBrand());
+        };
 
 //When putting the method outside of the variable, do object.method.
 //monitor.fullBrand : function() {
@@ -74,10 +74,10 @@ function species(name, latinName, status)
 
 var x = new species
         ("Bonobo",
-        "Pan paniscus",
-        "endangered");
-        document.write(x.name);
-        document.write("<br"/>);
-        document.write(x.ln);
-        document.write("<br"/>);
-        document.write(x.status);
+                "Pan paniscus",
+                "endangered");
+document.write(x.name);
+document.write("<br" / > );
+document.write(x.ln);
+document.write("<br" / > );
+document.write(x.status);
