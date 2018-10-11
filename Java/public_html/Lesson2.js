@@ -65,7 +65,7 @@ Person.prototype.name = function () {
 
 //Instantiation is and instance of an object
 
-function species(name, latinName, status)
+function Species(name, latinName, status)
 {
     this.name = name;
     this.ln = latinName;
